@@ -1,1 +1,14 @@
-console.log("hallo wereld");
+const images = document.querySelectorAll('.photobook img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+images.forEach(img => {
+    img.addEventListener('click', () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+    });
+});
+
+lightbox.addEventListener('click', () => {
+    lightbox.style.display = "none";
+});
