@@ -1,3 +1,54 @@
+*,
+*::before,
+*::after {
+margin: 0;
+
+padding: 0;
+
+box-sizing: border-box; 
+}
+
+html {
+   font-size: 62.5%;
+}
 body{
-    background-color: aqua;
+   font-size: 1.6rem;
+   background-color: rgb(253, 237, 193);
+}
+
+h2{
+    font-size: 4rem;
+}
+header{
+    font-size: 3rem;
+    padding: 4rem 2rem;
+    box-shadow: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Fotos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: rgb(201, 188, 152);
+}
+.flex-item{
+    background-color: rgb(179, 165, 129);
+    flex-basis: calc(25% - 2rem);
+    border: 1px red;
+    color: white;
+    padding: 2rem;
+    border-radius: 5rem;
+    flex-wrap: wrap;
+}
+
+footer{
+  text-align: center;
+  padding: 1rem;
+  background-color: rgb(150, 149, 149);
+  color: white;
+  font-size: 2rem;
 }
